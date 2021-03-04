@@ -1,0 +1,33 @@
+---
+  - name: docker.io
+    hosts: webservers
+    become: true
+    tasks:
+
+    - name: Install docker.io
+      apt:
+        name: docker.io
+        state: present
+
+    - name: install docker.io
+      apt:
+        name: docker.io
+        state: present
+
+    - name: install python3-pip
+      apt:
+        name: python3-pip
+        state: present
+
+    - name: pip install docker
+      pip:
+        name: docker
+
+    - name: docker-container dvwa
+      community.general.docker_container:
+        name: dvwa
+        image: cyberxsecurity/dvwa
+        state: started
+        restart: yes
+        ports:
+          - "80:80"
