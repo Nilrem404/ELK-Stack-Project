@@ -4,11 +4,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Images/network_diagram.png)
+![](Images/network_diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the roles file may be used to install only certain pieces of it, such as Filebeat.
 
-(/Ansible/install-elk.yml)
+![](Ansible/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -30,8 +30,6 @@ The purpose of the jump box is to offer a single gateway machine that will allow
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system services.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
-
 
 | Name                 | Function  | IP Address | Operating System |
 |----------------------|-----------|------------|------------------|
