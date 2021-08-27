@@ -42,10 +42,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-My local machine's IP
-
-
+Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from my local machine's IP
 Machines within the network can only be accessed by SSH.
 Only the Jump-Box-Provisioner was able to access the ELK-Network via SSH
 
@@ -78,12 +75,9 @@ This ELK server is configured to monitor the following machines:
 10.0.0.6
 
 We have installed the following Beats on these machines:
-- FileBeat
-- MetricBeat
+- Filebeat: collects log information and displays major changes and events. I would expect to see evidence of different sessions and activity from filebeat.
+- Metricbeat: collects system metrics from the services running on the machine. I would ecpect to be able to be able to see things like CPU and RAM usage by different programs.
 
-These Beats allow us to collect the following information from each machine:
-Filebeat collects log information and displays major changes and events. I would expect to see evidence of different sessions and activity from filebeat.
-Metricbeat collects system metrics from the services running on the machine. I would ecpect to be able to be able to see things like CPU and RAM usage by different programs.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
