@@ -2,6 +2,8 @@
 
 ## Automated ELK Stack Deployment
 
+### This is a project I completed for a CyberSecurity Bootcamp in Spring 2021
+
 The files in this repository were used to configure the network depicted below.
 
 ![network_diagram.png](Diagrams/network_diagram.png)
